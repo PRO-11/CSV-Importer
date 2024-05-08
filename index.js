@@ -21,7 +21,7 @@ filename:function(req,file,cb)
 
 const upload=multer({storage:storage}).single('file');
 
-
+app.use(express.json())
 // const worksheet=workbook.addWorksheet('Sheet1');
 
 const data=[
@@ -308,6 +308,11 @@ function removeSpacesExceptQuote(data)
 app.get('/',(req,res)=>{
     console.log("pro")
     res.send("pro")
+})
+
+app.post('/abc',(req,res)=>{
+    console.log("hello")
+    res.send("helow")
 })
 app.post('/file',(req,res)=>{
     try{
