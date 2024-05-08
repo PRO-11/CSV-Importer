@@ -305,7 +305,10 @@ function removeSpacesExceptQuote(data)
     }
     return result
 }
-
+app.get('/',(req,res)=>{
+    console.log("pro")
+    res.send("pro")
+})
 app.post('/file',(req,res)=>{
     try{
    
@@ -354,10 +357,7 @@ catch(err)
         // console.log(typeof(type),type)
    
 })
-app.get('/',(req,res)=>{
-    console.log("pro")
-    res.send("pro")
-})
+
 
 app.listen(8080,()=>{
     console.log("Server lisistening at",8080);
