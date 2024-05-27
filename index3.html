@@ -67,58 +67,94 @@
        
     </div>
 </div>
-    <div class="d-flex my-5   justify-content-center align-items-center  bg-warning text-dark">
-    <form id="formid" action="http://localhost:8080/file"  method="post" enctype="multipart/form-data" onsubmit="return validateForm()" >
-       
+<form id="formid" action="http://localhost:8080/file"  method="post" enctype="multipart/form-data" onsubmit="return validateForm()" >
+    <div class="d-flex flex-row my-5 flex-wrap justify-content-around bg-warning text-dark">
+       <div>
         <div class="form-group row mt-5">
             <label for="FQDN" class="col-sm-2 col-form-label"> FQDN </label>
-        <div class="my-2 col-sm-10">
+        <div class="my-2 col-sm-6">
         <input type="number" class="form-control" name="FQDN" id="FQDN" required>
         </div>
     </div>
     <div class="form-group row">
         <label for="Type" class="col-sm-2 col-form-label">Type</label>
-        <div class="my-2 col-sm-10">
+        <div class="my-2 col-sm-6">
         <input type="number" class="form-control"  name="type" id="type"  required>
         </div>
     </div>
     <div class="form-group row">
         <label for="Value" class="col-sm-2 col-form-label">Value</label>
-        <div class="my-2 col-sm-10">
+        <div class="my-2 col-sm-6">
         <input type="number" class="form-control" name="value" id="value" required>
         </div>
     </div>
     <div class="form-group row">
         <label for="Zone" class="col-sm-2 col-form-label">Zone Name</label>
-        <div class="my-2 col-sm-10">
+        <div class="my-2 col-sm-6">
         <input type="text" class="form-control" name="zone" id="zone"  required>
         </div>
     </div>
     <!-- <div class="form-group row">
         <label for="append_zone" class="col-sm-2 col-form-label" data-toggle="tooltip" data-placement="right" title="Append Zone Name to each FQDN">Append Zone </label>
-        <div class="my-2 col-sm-10">
+        <div class="my-2 col-sm-6">
         <input type="checkbox" name="append_zone" value="append_zone" >
         </div>
     </div> -->
     <div class="form-group row">
         <label for="excel" class="col-sm-2 col-form-label" >Excel File </label>
-        <div class="my-2 col-sm-10">
+        <div class="my-2 col-sm-6">
         <input type="checkbox" name="excel" value="excel" >
         </div>
     </div>
     <div class="form-group row">
         <label for="file" class="col-sm-2 col-form-label">Zone File</label>
-        <div class="my-2 col-sm-10">
+        <div class="my-2 col-sm-6">
         <input type="file" name="file" id="file" accept=".doc,.xlsx,.csv,.zone,.txt" required>
         </div>
     </div>
-    <div class="form-group row justify-content-center" >
+    
+</div>
+              
+
+
+
+
+<div>
+    <div class="form-group row mt-5">
+        <label for="Implementer" class="col-sm-2 col-form-label"> Implementer </label>
+    <div class="my-2 mx-5 col-sm-6">
+    <input type="text" class="form-control" name="Implementer" id="Implementer" required>
+    </div>
+</div>
+<div class="form-group row mt-5">
+    <label for="Requestor" class="col-sm-2 col-form-label"> Requestor </label>
+<div class="my-2 mx-5 col-sm-6">
+<input type="text" class="form-control" name="Requestor" id="Requestor" required>
+</div>
+</div>
+<div class="form-group row mt-5">
+    <label for="Req_Date" class="col-sm-2 col-form-label"> Req_Date </label>
+<div class="my-2 mx-5 col-sm-6">
+<input type="date" class="form-control" name="Req_Date" id="Req_Date" required>
+</div>
+</div>
+<div class="form-group row mt-5">
+    <label for="Req_Ticket" class="col-sm-2 col-form-label"> Req_Ticket </label>
+<div class="my-2 mx-5 col-sm-6">
+<input type="text" class="form-control" name="Req_Ticket" id="Req_Ticket" required>
+</div>
+</div>
+
+</div>
+<div class="w-100">
+    <div class="form-group row justify-content-center align-items-center" >
         <div class="my-2 ">
         <button type="submit" value="Upload">Submit</button>
     </div>
 </div>
+</div>
+</div>
     </form>
-    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
